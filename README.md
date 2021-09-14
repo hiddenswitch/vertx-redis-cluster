@@ -8,6 +8,18 @@ This passes all the Vertx cluster manager tests with ungraceful shutdown, and is
 
 Requires Vertx 3.9.2 but is compatible with any of the 3.6+ clustering SPI.
 
+Install from Jitpack:
+
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.hiddenswitch:vertx-redis-cluster:1.0.1'
+}
+```
+
 Create the cluster manager and add it to the options in your `Vertx.clusteredVertx` call.
 
 ```java
